@@ -4170,6 +4170,22 @@ td.visible-print {
 .navbar {
   box-shadow: 0px 2px 10px #CCCCCC;
 }
+.nav.navbar-nav li.active {
+  border-bottom: 3px solid #00acec;
+}
+.carousel-control.right,
+.carousel-control.left {
+  background-image: none;
+}
+.jumbotron {
+  background-color: #ffffff;
+}
+.carousel-indicators .active {
+  background-color: #333333;
+}
+.carousel-indicators li {
+  border: 2px solid #999999;
+}
 .clearfix:before,
 .clearfix:after {
   content: " ";

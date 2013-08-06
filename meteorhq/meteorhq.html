@@ -17,30 +17,104 @@
          <span class="icon-bar"></span>
        </button>
        <a class="navbar-brand" href="#">METEOR HQ</a>
-       <div class="nav-collapse collapse pull-right">
-         <ul class="nav navbar-nav">
-           <li class="active"><a href="#">Home</a></li>
-           <li><a href="#about">About</a></li>
-           <li><a href="#contact">Contact</a></li>
+       <div class="nav-collapse subnav-collapse collapse">
+         <ul class="nav navbar-nav pull-right">
+           <li class="active dropdown">
+               <a href="#" title="about us" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-home"></span></a>
+               <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                   <li><a tabindex="-1" href="#">Home</a></li>
+                   <li><a tabindex="-1" href="#">Services</a></li>
+                   <li><a tabindex="-1" href="#">Process</a></li>
+                   <li><a tabindex="-1" href="#">About Us</a></li>
+               </ul>    
+           </li>
+           <li><a href="#questions" title="questions"><span class="glyphicon glyphicon-comment"></span></a></li>
+           <li><a href="#marketplace" title="marketplace"><span class="glyphicon glyphicon-shopping-cart"></span></a></a></li>
          </ul>
        </div><!--/.nav-collapse -->
    </div>
+   
+   <div id="myCarousel" class="carousel slide">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+            <div class="container">
+            <div class="jumbotron">
+                <div class="row">
+                    <div class="col-lg-6">
+		                <h1>Incredible real-time web apps - real fast</h1>
+		                <p>Meteor HQ specialises in the development of real-time web apps.</p>
+		                <p><a class="btn btn-primary btn-large">Find Out More &raquo;</a></p>
+		            </div>
+		            <div class="col-lg-6">
+		                <img src="images/meteor_web.jpg" class="img-responsive"></img>
+		            </div>
+		        </div>
+		    </div>
+		    </div>
+        </div>
+        <div class="item">
+            <div class="container">
+            <div class="jumbotron">
+                <div class="row">
+                    <div class="col-lg-6">
+		                <h1>Meteor Marketplace</h1>
+		                <p>Like Atmosphere but with cash! Buy and sell smart packages.</p>
+		                <p><a class="btn btn-primary btn-large">Check it Out &raquo;</a></p>
+		            </div>
+		            <div class="col-lg-6">
+		                <img src="images/marketplace.jpg" class="img-responsive"></img>
+		            </div>
+		        </div>
+		    </div>
+		    </div>
+        </div>
+        <div class="item">
+            <div class="container">
+            <div class="jumbotron">
+                <div class="row">
+                    <div class="col-lg-6">
+		                <h1>Our process will transform your business</h1>
+		                <p>Turn your ideas into reality faster than you thought possible.</p>
+		                <p><a class="btn btn-primary btn-large">Read About Our Method &raquo;</a></p>
+		            </div>
+		            <div class="col-lg-6">
+		                <img src="images/process.jpg" class="img-responsive"></img>
+		            </div>
+		        </div>
+		    </div>
+		    </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div>
 
-   <div class="container">
+    <div class="darker-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 centered">
+                    <img src="images/file_icon.png" class="img-responsive"></img>
+                    <h2>Web App Design</h2>
+                    <p>Meteor HQ is a boutique web app development company focused on changing the way our clients think about the web. Our apps are business-driven, user-focused, and highly innovative.</p>
+                </div>
+                <div class="col-lg-4 centered">
+                    <img src="images/monitor_icon.png" class="img-responsive"></img>
+                    <h2>All Devices</h2>
+                    <p>We believe that web apps should perform brilliantly on all devices big and small. We build responsive apps from the ground up which can be used by all your customers, wherever, whenever.</p>
+                </div>
+                <div class="col-lg-4 centered">
+                    <img src="images/cog_icon.png" class="img-responsive"></img>
+                    <h2>Robust and Fast</h2>
+                    <p>Remember click frenzy? Ever tried booking on ticketmaster? We are experts in building high performance apps which don't crash under load. Your users will never be slowed down and you can tackle global markets!
+                </div>
+            </div>
+        </div>    
+    </div>
 
-     <div class="starter-template">
-       <h1>Bootstrap starter template</h1>
-       <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-     </div>
-
-   </div><!-- /.container -->
-    
-    {{>hello}}
  </body>
-
-
-<template name="hello">
-  <h1>Hello World!</h1>
-  {{greeting}}
-  <input type="button" value="Click" />
-</template>

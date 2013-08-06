@@ -7,3 +7,13 @@ body {
   padding: 40px 15px;
   text-align: center;
 }
+.centered {
+	text-align: center;
+}
+
+.darker-section {
+	background: url("images/texture.png") repeat scroll 0 0 transparent;
+	color: #fff;
+	padding: 30px 0;
+}
+
