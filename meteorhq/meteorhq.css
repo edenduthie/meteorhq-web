@@ -14,6 +14,57 @@ body {
 .darker-section {
 	background: url("images/texture.png") repeat scroll 0 0 transparent;
 	color: #fff;
+}
+
+section {
 	padding: 30px 0;
+}
+
+.section-header {
+    border-bottom: 3px solid #E3E4DD;
+    box-shadow: 0 1px 0 #C2C4BB;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+}
+
+.white-card {
+    background-color: #FAFBF7;
+    background-image: linear-gradient(to bottom, #F8F9F4, #FDFDFB);
+    background-repeat: repeat-x;
+    box-shadow: 0 1px 4px 1px #B4B6A9, 2px 2px 1px 0 #FFFFFF inset;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.white-card h3 {
+    border-bottom: 1px solid #CFD1C6;
+    box-shadow: 0 1px 0 #FFFFFF;
+    margin: 10px 0;
+    padding-bottom: 10px;
+    text-shadow: -1px -1px #FFFFFF;
+}
+
+
+footer {
+    background: url("images/texture.png") repeat scroll 0 0 transparent;
+    border-top: 2px solid #FFFFFF;
+    color: #FFFFFF;
+}
+
+#twitter_feed_wrapper {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #000000;
+    border-top: 1px solid #000000;
+    margin-top: 48px;
+    padding: 14px;
+}
+
+#twitter_feed_wrapper .twitter_feed_icon a {
+    font-size: 70px;
+    text-align: center;
+}
+
+section.stripped {
+    background: url("images/stripped.png") repeat scroll left top transparent;
 }
 
