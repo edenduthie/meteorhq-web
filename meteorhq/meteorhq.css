@@ -1,11 +1,7 @@
 /* CSS declarations go here */
 
 body {
-  padding-top: 50px;
-}
-.starter-template {
-  padding: 40px 15px;
-  text-align: center;
+  padding-top: 40px;
 }
 .centered {
 	text-align: center;
@@ -62,9 +58,15 @@ footer {
 #twitter_feed_wrapper .twitter_feed_icon a {
     font-size: 70px;
     text-align: center;
+    line-height: 10px;
 }
 
 section.stripped {
     background: url("images/stripped.png") repeat scroll left top transparent;
+}
+
+footer textarea,
+footer input[type="text"] {
+	width: 100%;
 }
 

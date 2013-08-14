@@ -1,0 +1,75 @@
+<template name="footer"> <footer>
+	<section id="twitter_feed_wrapper">
+		<div class="container">
+			<div class="row-fluid">
+				<div class="col-lg-1 twitter_feed_icon">
+					<a href="https://www.twitter.com/eduthie"><i class="icon icon-twitter-sign"></i></a>
+				</div>
+				<div class="col-lg-11">
+					<blockquote>
+						<p>
+							{{tweet.text}}
+						</p>
+						&mdash; {{tweet.user.name}} (@{{tweet.user.screen_name}}) <a
+							href="https://twitter.com/{{tweet.user.screen_name}}">{{dateFormat tweet.created_at}}</a>
+					</blockquote>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="footer_teasers_wrapper">
+		<div class="container">
+			<div class="row-fluid">
+				<div class="col-lg-4 footer_teaser">
+					<h3>Contact Details</h3>
+					<p>We are always keen to get in touch to discuss web aps! Drop
+						us a line or pop in.</p>
+					<p>
+						<i class="icon-map-marker"></i> 32 Marshall Avenue, Kew, VIC 3101,
+						Australia
+					</p>
+					<p>
+						<i class="icon-phone"></i> (+61) 462 352 917
+					</p>
+					<p>
+						<i class="icon-envelope"></i> contact@meteorhq.com
+					</p>
+				</div>
+				<div class="col-lg-4 footer_teaser">
+					<h3>In a Nutshell</h3>
+					<p>Meteor HQ is a Melbourne based web app development firm
+						specialising in Meteor development that combines industry-leading
+						web app design expertise with a proven process to transform the
+						way our clients do business.</p>
+				</div>
+				<div id="latest-flickr-images" class="col-lg-4 footer_teaser">
+					<h3>Send us a Message</h3>
+					<form role="form" novalidate="novalidate">
+					    <fieldset>
+					        <div class="form-group">
+					            <label>email</label>
+					            <input type="text" data-type="email" class="form-control" data-required="true"></input>
+					        </div>
+					        <div class="form-group">
+					            <label>message</label>
+					            <textarea class="form-control"></textarea>
+					        </div>
+					        <div class="form-group">
+					            <button type="submit" class="btn btn-primary">Send Message</button>
+					        </div>
+					    </fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="copyright">
+		<div class="container">
+			<div class="row-fluid">
+				<div class="col-lg-6">Copyright &copy;2013 all rights reserved
+				</div>
+				<div class="col-lg-6 text-right">Gator Logic Pty. Ltd.</div>
+			</div>
+		</div>
+	</section>
+</footer> </template>
