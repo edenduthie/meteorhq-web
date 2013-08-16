@@ -23,6 +23,14 @@ Template.footer.events({
 		event.preventDefault();
 		var element = $(event.target).parent().parent().parent();
 		var result = element.parsley('validate');
-		console.log(result);
+		if( result ) {
+			var form = new Form(element);
+			var message = form.scan();
+			console.log(message);
+		}
 	}
 });
+
+Template.footer.currentUrl = function() {
+	return document.URL;
+}
