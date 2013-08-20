@@ -121,4 +121,47 @@ footer input[type="text"] {
 .full-underline {
 	border-bottom: 3px solid #E3E4DD;
     box-shadow: 0 1px 0 #C2C4BB;
+    padding-bottom: 10px;
 }
+
+.shadow-boxing {
+    background-color: #FAFBF7;
+    background-image: linear-gradient(to bottom, #F8F9F4, #FDFDFB);
+    background-repeat: repeat-x;
+    box-shadow: 0 1px 4px 1px #B4B6A9, 2px 2px 1px 0 #FFFFFF inset;
+    padding: 10px;
+}
+
+.services .row {
+	margin: 30px 0;
+}
+
+.row.dotted-border {
+	padding: 30px 0;
+	border-bottom: 1px dashed #CEC6AE;
+	border-top: 1px dashed #CEC6AE; 
+}
+
+.package-box {
+	-moz-box-sizing: border-box;
+    border: 1px solid #E7E7E7;
+    border-radius: 6px 6px 6px 6px;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.package-box h3 {
+	background-color: #EEEEEE;
+    border-bottom: 1px solid #CCCCCC;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    margin: 0 0 10px;
+    padding: 30px 5px;
+}
+.package-box ul {
+	margin-top: 20px;
+}
+
+ .package-box button {
+     margin-bottom: 15px;
+ }

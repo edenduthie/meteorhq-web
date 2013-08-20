@@ -5039,6 +5039,12 @@ td.visible-print {
   margin: 5px 0;
   padding: 0;
 }
+.package-box i {
+  color: #00acec;
+}
+.package-box.blue-border {
+  border: 15px solid #00acec;
+}
 .clearfix:before,
 .clearfix:after {
   content: " ";
