@@ -4989,6 +4989,9 @@ td.visible-print {
     display: none !important;
   }
 }
+.brand-primary {
+  color: #00acec;
+}
 .navbar {
   box-shadow: 0px 2px 10px #CCCCCC;
 }
