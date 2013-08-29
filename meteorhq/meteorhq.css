@@ -165,3 +165,35 @@ footer input[type="text"] {
  .package-box button {
      margin-bottom: 15px;
  }
+
+.method-stripped .jumbotron {
+	background: transparent;
+	text-align: center;
+}
+
+.method-picture {
+    background: url(images/services.jpg) 50% 0 fixed;
+    height: auto; 
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    color: #ffffff;
+    padding: 100px 0;
+}
+
+.method-picture p {
+	background-color: #333;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+.method-stripped {
+    background: url(images/stripped.png) 50% 0 fixed;
+    height: auto;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    padding: 100px 0;
+}

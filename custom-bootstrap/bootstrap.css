@@ -310,7 +310,7 @@ hr {
   margin-top: 20px;
   margin-bottom: 20px;
   border: 0;
-  border-top: 1px solid #eeeeee;
+  border-top: 1px solid #999999;
 }
 .sr-only {
   position: absolute;
@@ -543,7 +543,7 @@ abbr.initialism {
 blockquote {
   padding: 10px 20px;
   margin: 0 0 20px;
-  border-left: 5px solid #eeeeee;
+  border-left: 5px solid #999999;
 }
 blockquote p {
   font-size: 17.5px;
@@ -564,7 +564,7 @@ blockquote small:before {
 blockquote.pull-right {
   padding-right: 15px;
   padding-left: 0;
-  border-right: 5px solid #eeeeee;
+  border-right: 5px solid #999999;
   border-left: 0;
 }
 blockquote.pull-right p,
@@ -5044,6 +5044,9 @@ td.visible-print {
 }
 .package-box.blue-border {
   border: 15px solid #00acec;
+}
+#method h4 {
+  color: #00acec;
 }
 .clearfix:before,
 .clearfix:after {

@@ -2,6 +2,7 @@ Template.header.helpers({
 	isActive : function(key) {
 		var currentPage = Template.header.getCurrentPage();
 	    if( key === currentPage ) return 'active';
+	    else if( !currentPage && key === 'home' ) return 'active';
 	    else return '';
 	}
 });
