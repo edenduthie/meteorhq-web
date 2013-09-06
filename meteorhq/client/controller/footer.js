@@ -26,7 +26,9 @@ Template.footer.events({
 		if( result ) {
 			var form = new Form(element);
 			var message = form.scan();
-			console.log(message);
+			Meteor.call('contact',message,function(error,result){});
+			bootbox.alert("Thanks for getting in touch, I will get back to you shortly!");
+			form.clear();
 		}
 	}
 });

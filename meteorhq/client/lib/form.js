@@ -14,3 +14,10 @@ Form.prototype.scan = function() {
 	});
 	return result;
 }
+
+Form.prototype.clear = function() {
+	$(this.element).find('input[type="text"],textarea').each(function(index,value){
+		var inputElement = $(value);
+		inputElement.val('');
+	});
+}

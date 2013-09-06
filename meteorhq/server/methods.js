@@ -21,5 +21,28 @@ Meteor.methods({
         	fut.ret(data);
         });
         return fut.wait();
+    },
+    contact: function(message) {
+    	var nodemailer = Meteor.require("nodemailer");
+    	var smtpTransport = nodemailer.createTransport("SMTP",{
+    	   service: "Gmail",
+    	   auth: {
+    	       user: "palstester@gmail.com",
+    	       pass: "mysecretpass"
+    	   }
+    	});
+    	smtpTransport.sendMail({
+            from: message.email, // sender address
+    		to: "Eden Duthie <eduthie@gmail.com>", // comma separated list of receivers
+    		subject: "MeteorHQ contact request", // Subject line
+    		text: message.message // plaintext body
+		}, function(error, response) {
+			if (error) {
+				console.log(error);
+			} else {
+				console.log("Message sent: " + response.message);
+			}
+		});
+    	Messages.insert(message);
     }
 });
