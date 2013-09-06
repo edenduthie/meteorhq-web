@@ -27,15 +27,15 @@ Meteor.methods({
     	var smtpTransport = nodemailer.createTransport("SMTP",{
     	   service: "Gmail",
     	   auth: {
-    	       user: "palstester@gmail.com",
-    	       pass: "mysecretpass"
+    	       user: config.smtp.user,
+    	       pass: config.smtp.pass
     	   }
     	});
     	smtpTransport.sendMail({
             from: message.email, // sender address
-    		to: "Eden Duthie <eduthie@gmail.com>", // comma separated list of receivers
+    		to: "Eden Duthie <"+config.smtp.to+">", // comma separated list of receivers
     		subject: "MeteorHQ contact request", // Subject line
-    		text: message.message // plaintext body
+    		text: message.email + " " + message.message // plaintext body
 		}, function(error, response) {
 			if (error) {
 				console.log(error);
