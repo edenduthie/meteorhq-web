@@ -18,7 +18,7 @@ Meteor.methods({
         	count : 1,
         	user_id : 'eduthie'
         },function(err,data){
-        	fut.ret(data);
+        	fut['return'](data);
         });
         return fut.wait();
     },
