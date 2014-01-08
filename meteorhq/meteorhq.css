@@ -203,7 +203,7 @@ footer input[type="text"] {
 }
 
 .full-page-photo .img-responsive {
-	width: 100%;
+	min-width: 100%;
 }
 
  .jumbotron.constrainWidth {
