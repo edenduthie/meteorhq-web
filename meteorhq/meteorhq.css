@@ -202,7 +202,7 @@ footer input[type="text"] {
 	margin: 30px 0;
 }
 
-.full-page-photo .img-responsive {
+.full-page-photo img {
 	min-width: 100%;
 }
 
