@@ -1,0 +1,48 @@
+html body {
+    height: 100%;
+    width: 100%;
+    font-family: Cabin;
+}
+
+.jumbotron {
+    background: none;
+}
+
+.jumbotron h1 {
+    font-size: 2em;
+}
+
+section {
+    position: fixed;
+    width: 100%;
+    transform:translate(0,0%);
+}
+
+.back {
+    width: 100%;  
+    position: fixed;
+}
+
+.white-text {
+    color: white;
+}
+
+iframe {
+    width: 100%;
+    height: 500px;
+}
+
+.horizontal-slide {
+    transform: translate(100%,0);
+}
+
+.numbers {
+    font-family: Cabin;
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+}
+
+.greyback {
+    background-color: rgb(50,50,50);
+}
