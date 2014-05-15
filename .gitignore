@@ -3,3 +3,4 @@ bootstrap
 RemoteSystemsTempFiles
 .DS_Store
 */.DS_Store
+.htaccess
